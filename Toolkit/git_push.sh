@@ -1,3 +1,5 @@
+#@author Discover304 hobart.yang@qq.com
+
 stty -echo
 echo -e "\033[7m这是git提交机，按任意键继续\033[0m"
 echo -e "\033[7mThis is a git machine, press any key to continue\033[0m"
