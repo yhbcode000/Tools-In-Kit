@@ -21,8 +21,6 @@ echo "-------------------commiting--------------------"
 git commit -m "Part 1: This is a small change by master."
 echo "-------------------pushing----------------------"
 git push origin master
-echo "-------------------log--------------------------"
-git log
 echo "-------------------status again-----------------"
 git status
 
