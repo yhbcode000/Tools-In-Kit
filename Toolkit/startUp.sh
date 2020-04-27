@@ -1,47 +1,53 @@
 #!/mnt/c/WINDOWS/system32/bash
 #this is a simple startup script
 
-#prepare
-sleep 0.01
-
 #initialise commend
 general (){
+    
+    sleep 0.1
     echo -e "Starting Net Ease Cloud Music(网易云音乐)"
     start "" "C:\Program Files (x86)\Netease\CloudMusic\cloudmusic.exe"
     
+    sleep 0.1
     echo -e "Starting weChat(微信)"
     start "" "C:\Program Files\WindowsApps\TencentWeChatLimited.forWindows10_2.6.3.0_x86__sdtnhv12zgd7a\WeChatStore\WeChatStore.exe"
     
+    sleep 0.1
     echo -e "Starting QQ(QQ)"
     start "" "C:\Program Files (x86)\QQ\Bin\QQScLauncher.exe"
 }
 
 work (){
+    
+    sleep 0.1
     echo -e "Starting weChat for Biz(企业微信)"
     start "" "C:\Program Files (x86)\WXWork\WXWork.exe"
     
-    
+    sleep 0.1
     echo -e "Starting Zoom(zoom 会议室)"
     start "" "C:\Users\22759\AppData\Roaming\Zoom\bin\Zoom.exe"
     
-    
+    sleep 0.1
     echo -e "Starting Bilibili Live(哔哩哔哩直播间)"
     start "" "C:\Program Files (x86)\bililive\livehime\livehime.exe"
     
 }
 
 break (){
+    
+    sleep 0.1
     echo -e "Starting Steam(Steam 游戏社区)"
     start "" "C:\Program Files (x86)\Steam\Steam.exe"
     
-    
+    sleep 0.1
     echo -e "Starting 360 Game Booster(360游戏加速器)"
     start "" "C:\Program Files (x86)\360\Total Security\GameBooster.exe"
 }
 
 #ask for input
+stty -echo
 echo -e "What type of startup? WORK(\033[7m W \033[0m)/BREAK(\033[7m B \033[0m)/ALL(\033[7m A \033[0m)"
-if read -n1 -t5 OPTION
+if read -n1 -t10 OPTION
 then
     echo
     echo -e "System is starting up. with option \033[7m$OPTION\033[0m."
@@ -83,4 +89,3 @@ general
 #give finish message
 echo
 echo "FINISH"
-sleep 10s
