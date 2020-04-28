@@ -20,9 +20,9 @@ general (){
 
 work (){
     
-    sleep 0.1
-    echo -e "Starting weChat for Biz(企业微信)"
-    start "" "C:\Program Files (x86)\WXWork\WXWork.exe"
+    #sleep 0.1
+    #echo -e "Starting weChat for Biz(企业微信)"
+    #start "" "C:\Program Files (x86)\WXWork\WXWork.exe"
     
     sleep 0.1
     echo -e "Starting Zoom(zoom 会议室)"
@@ -50,7 +50,7 @@ break (){
 
 #ask for input
 stty -echo
-echo -e "What type of startup? WORK(\033[7m W \033[0m)/BREAK(\033[7m B \033[0m)/ALL(\033[7m A \033[0m)" | lolcat
+echo -e "What type of startup? WORK(\033[7m W \033[0m)/BREAK(\033[7m B \033[0m)/ALL(\033[7m A \033[0m)"
 if read -n1 -t10 OPTION
 then
     echo
