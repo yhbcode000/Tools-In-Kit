@@ -1,5 +1,6 @@
 #!/mnt/c/WINDOWS/system32/bash
 #this is a simple startup script
+#@author Github: Discover304 hobart.yang@qq.com
 
 #initialise commend
 general (){
@@ -9,12 +10,12 @@ general (){
     start "" "C:\Program Files (x86)\Netease\CloudMusic\cloudmusic.exe"
     
     sleep 0.1
-    echo -e "Starting weChat(微信)"
-    start "" "C:\Program Files\WindowsApps\TencentWeChatLimited.forWindows10_2.6.3.0_x86__sdtnhv12zgd7a\WeChatStore\WeChatStore.exe"
-    
-    sleep 0.1
     echo -e "Starting QQ(QQ)"
     start "" "C:\Program Files (x86)\QQ\Bin\QQScLauncher.exe"
+    
+    sleep 0.1
+    echo -e "Starting weChat(微信)"
+    start "" "C:\Program Files\WindowsApps\TencentWeChatLimited.forWindows10_2.6.3.0_x86__sdtnhv12zgd7a\WeChatStore\WeChatStore.exe"
 }
 
 work (){
@@ -27,10 +28,13 @@ work (){
     echo -e "Starting Zoom(zoom 会议室)"
     start "" "C:\Users\22759\AppData\Roaming\Zoom\bin\Zoom.exe"
     
-    sleep 0.1
-    echo -e "Starting Bilibili Live(哔哩哔哩直播间)"
-    start "" "C:\Program Files (x86)\bililive\livehime\livehime.exe"
+    #sleep 0.1
+    #echo -e "Starting Bilibili Live(哔哩哔哩直播间)"
+    #start "" "C:\Program Files (x86)\bililive\livehime\livehime.exe"
     
+    sleep 0.1
+    echo -e "Starting Microsoft Teams(微软 Teams)"
+    start "" "C:\Users\22759\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Microsoft Teams"
 }
 
 break (){
@@ -41,12 +45,12 @@ break (){
     
     sleep 0.1
     echo -e "Starting 360 Game Booster(360游戏加速器)"
-    start "" "C:\Program Files (x86)\360\Total Security\GameBooster.exe"
+    start "" "C:\Users\22759\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Microsoft Teams"
 }
 
 #ask for input
 stty -echo
-echo -e "What type of startup? WORK(\033[7m W \033[0m)/BREAK(\033[7m B \033[0m)/ALL(\033[7m A \033[0m)"
+echo -e "What type of startup? WORK(\033[7m W \033[0m)/BREAK(\033[7m B \033[0m)/ALL(\033[7m A \033[0m)" | lolcat
 if read -n1 -t10 OPTION
 then
     echo
@@ -88,4 +92,6 @@ general
 
 #give finish message
 echo
-echo "FINISH"
+echo "FINISH, PRESS ANY KEY TO EXIT"
+read -n1
+exit 1
