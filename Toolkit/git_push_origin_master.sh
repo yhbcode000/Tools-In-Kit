@@ -1,4 +1,5 @@
 #@author Discover304 hobart.yang@qq.com
+#bad tool for fun
 
 stty -echo #do not display
 echo -e "\033[7m这是git提交机，按任意键继续\033[0m"
