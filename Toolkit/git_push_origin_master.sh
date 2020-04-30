@@ -16,7 +16,7 @@ echo -e "\033[7mPlease, have a check, press any key to continue\033[0m"
 read -n1
 
 echo "-------------------adding-----------------------"
-git add .
+git add --all
 echo "-------------------commiting--------------------"
 git commit -m "Part 1: This is a small change by master."
 echo "-------------------pushing----------------------"
