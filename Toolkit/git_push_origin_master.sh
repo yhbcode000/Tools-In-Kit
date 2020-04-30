@@ -20,6 +20,7 @@ git add --all
 echo "-------------------commiting--------------------"
 echo "请说明你的改动"
 echo "Please give a description of your change"
+stty echo #show input
 read message
 git commit -m "$message"
 echo "-------------------pushing----------------------"
