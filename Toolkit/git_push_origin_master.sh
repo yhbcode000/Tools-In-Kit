@@ -18,7 +18,10 @@ read -n1
 echo "-------------------adding-----------------------"
 git add --all
 echo "-------------------commiting--------------------"
-git commit -m "Part 1: This is a small change by master."
+echo "请说明你的改动"
+echo "Please give a description of your change"
+read message
+git commit -m "$message"
 echo "-------------------pushing----------------------"
 git push origin master
 echo "-------------------status again-----------------"
