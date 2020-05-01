@@ -1,4 +1,3 @@
-#!/mnt/c/WINDOWS/system32/bash
 #this is a simple startup script
 #@author Github: Discover304 hobart.yang@qq.com
 
@@ -24,13 +23,13 @@ work (){
     #echo -e "Starting weChat for Biz(企业微信)"
     #start "" "C:\Program Files (x86)\WXWork\WXWork.exe"
     
-    #sleep 0.1
-    #echo -e "Starting Zoom(zoom 会议室)"
-    #start "" "C:\Users\22759\AppData\Roaming\Zoom\bin\Zoom.exe"
-    
     sleep 0.1
-    echo -e "Starting Bilibili Live(哔哩哔哩直播间)"
-    start "" "C:\Program Files (x86)\bililive\livehime\livehime.exe"
+    echo -e "Starting Zoom(zoom 会议室)"
+    start "" "C:\Users\22759\AppData\Roaming\Zoom\bin\Zoom.exe"
+    
+    #sleep 0.1
+    #echo -e "Starting Bilibili Live(哔哩哔哩直播间)"
+    #start "" "C:\Program Files (x86)\bililive\livehime\livehime.exe"
     
     sleep 0.1
     echo -e "Starting Microsoft Teams(微软 Teams)"
