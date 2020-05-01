@@ -33,3 +33,4 @@ echo
 echo -e "\033[7m检查一下, 按任意键退出\033[0m"
 echo -e "\033[7m/check again, press any key to exit\033[0m"
 read -n1
+exit 1
