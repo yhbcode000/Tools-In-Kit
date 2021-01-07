@@ -9,6 +9,8 @@ Instruction has been provided in the comment of those file
 
 ## python scripts
 
+1. :heavy_check_mark: `DAIN_APP_scenes_change_fix_tool.py`: Fix the unsatisfy frames of DAIN_APP frame padding. [DAIN_APP Githup repo](https://github.com/BurguerJohn/Dain-App)
+
 ## bash scripts
 
 1. :heavy_check_mark: `startUp.sh`: This is a template of starting up program
